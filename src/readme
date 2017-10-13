@@ -1,4 +1,4 @@
-深度学习是当前高性能计算领域新的挑战性问题，其中卷积计算是深度学习中最核心且最耗时的运算，如何加速卷积计算一直是近几年的研究热点，例如快速傅里叶变换等。Winograd算法（https://arxiv.org/abs/1509.09308）是2015年提出的一种卷积计算的快速算法，通过减少卷积计算中的乘法操作提高运算速度，目前应用于许多深度学习框架中。
+
 #Code Description: This code is a sample code used for convolution computation based on winograd algorithm. It is paralleled with OpenMP and written in C/C++. It will compute 18 convolution layers and here are more information about code modification below.
 -   "C_array, IH_array, IW_array, K_array, Batch_array" are convolution parameters, CANN’t be modified;
 
