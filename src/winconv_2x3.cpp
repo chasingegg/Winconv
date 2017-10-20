@@ -318,7 +318,7 @@ static void batched_gemm_2x3(const float* image, const int irows, const int icol
 	const int ldf = frows;
 	const int ldo = irows;
     
-    #pragma omp parallel for collapse(2) private(t, i)
+    #pragma omp parallel for num_threads(68) collapse(2) private(t, i)
     for(i = 0; i < 16; i++){
         for(t = 0; t < batch; t++){
             const float* im = image+i*ISTRIDE+t*irows*icols; 
@@ -523,7 +523,7 @@ void winconv_2x3(const int bblock, const int M, float* restrict image, const int
 	
     float *b_image;
     float *b_out;
-    const int b_batchSize = 64;
+    const int b_batchSize = 32;
         
     if(batch%b_batchSize != 0){
 	printf("Error: Batch can't be divided by %d!\n", b_batchSize);
