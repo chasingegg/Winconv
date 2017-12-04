@@ -25,5 +25,5 @@ So there are 16 matrices of dimension TxC for an image input and 16 matrices of 
 ## Reference 
 
 - [Fast Algorithms for Convolutional Neural Networks](reference/1509.09308.pdf)
-- [Optimization of Spatial Convolution in ConvNets on Intel KNL](reference/Optimization of Spatial Convolution in ConvNets on Intel KNL.pdf)
+- [Optimization of Spatial Convolution in ConvNets on Intel KNL](reference/Optimization.pdf)
 - [FLACON Library](https://github.com/ColfaxResearch/FALCON)
